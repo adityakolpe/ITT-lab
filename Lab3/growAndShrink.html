@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Font Play</title>
+</head>
+<style>
+	* {
+		font-family: sans-serif;
+	}
+
+	#text {
+		margin-top: 300px;
+		color: rgb(196, 0, 0);
+		font-size: 20px;
+		text-align: center;
+	}
+</style>
+
+<body>
+	<p id="text" onclick="func()">Text Growing</p>
+	<script>
+		var m, n;
+		var pid = document.getElementById("text");
+		var sizep = 5;
+
+		function func() {
+			n = setInterval(grow, 50);
+		}
+
+		function grow() {
+			if (sizep < 50) {
+				pid.innerHTML = "Text Growing";
+				pid.style.color = "red";
+				pid.style.fontSize = sizep + "pt";
+				sizep += 0.5;
+			}
+			else {
+				m = setInterval(shrink, 50);
+				clearInterval(n);
+			}
+		}
+
+		function shrink() {
+			if (sizep >= 5) {
+				pid.innerHTML = "Text Shrinking";
+				pid.style.fontSize = sizep + "pt";
+				pid.style.color = "SlateBlue";
+				sizep -= 0.5;
+			}
+			else {
+				clearInterval(m);
+			}
+		}
+	</script>
+</body>
+
+</html>

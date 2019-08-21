@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PhoneNo</title>
+	<script type="text/javascript">
+		var phone = prompt("Input phoneNo in the form (555) 555-5555");
+		var str = phone.split(" ");
+		document.writeln("Area Code: "+str[0].slice(1,4));
+		document.writeln("First three digits: "+phone.slice(6,9));
+		document.writeln("Last four digits: "+phone.slice(10,14));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

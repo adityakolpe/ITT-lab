@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pigLatin</title>
+	<script type="text/javascript">
+		var text = prompt("Text bata");
+		var spl = text.split(" ");
+		for(var i=0;i<spl.length;i++)
+		{
+			var len = spl[i].length;
+			var str = spl[i].slice(1,len)+""+spl[i].slice(0,1)+"ay";
+			document.writeln(str);
+			document.writeln(" ");
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>
