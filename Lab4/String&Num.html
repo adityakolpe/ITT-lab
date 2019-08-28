@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String And Number</title>
+	<script type="text/javascript">
+		var count=0;
+		var str = prompt("enter a string","left most vowel");
+		for(var i=0;str[i]!='/0';i++)
+		{
+			if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u')
+			{
+				alert("first vowel at: "+(count+1));
+				break;
+			}
+			else
+				count++;
+		}
+		var num = prompt("Enter a num","123");
+		num = num + "";
+		alert(num.split("").reverse().join(""));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

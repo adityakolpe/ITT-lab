@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>USN</title>
+	<script type="text/javascript">
+		var usn = prompt("Enter USN","2AA22AA222");
+		var d1 = usn.slice(0,1);
+		var c1 = usn.slice(1,3);
+		var d2 = usn.slice(3,5);
+		var c2 = usn.slice(5,7);
+		var d3 = usn.slice(7,10);
+		//document.write(d1+" "+c1+" "+d2+" "+c2+" "+d3);
+		if(isNaN(d1))
+			alert("Enter number at 1st position");
+		if(!allLetter(c1))
+			alert("Enter alphabets at 2nd and 3rd pos");
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

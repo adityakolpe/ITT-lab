@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FibAndSq</title>
+	<script type="text/javascript">
+		var n = prompt("Enter n","5");
+		var f1=0,f2=1,f3;
+		document.write(f1+" "+f2+" ");
+		for(var i=0;i<n-1;i++)
+		{
+			f3=f1+f2;
+			f1=f2;
+			f2=f3;
+			document.write(f3+" ")
+		}
+		var res,msg;
+		for(var x= 1; x<=n;x++)
+		{
+		res = x * x;
+		msg = msg + " " + x + " * "+ x + " = " + res + "\n";
+		}
+		alert(msg+"");
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
